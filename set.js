@@ -1,4 +1,4 @@
-
+it
 // change only what you are ask to change else bit won't work thanks for your understanding 
 const fs = require('fs'), 
       dotenv = fs.existsSync('config.env') ? require('dotenv').config({ path: '/.env' }) : undefined,
@@ -10,7 +10,7 @@ global.session = "https://session-id-8pge.onrender.com";
  
  
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "PRINCE-MDX~fH52LjcBYVBL2UpzMx4z", // Add sess Id here espwcially when deploying on panels else use app.json and .env file...
+SESSION_ID: process.env.SESSION_ID || "", // Add sess Id here espwcially when deploying on panels else use app.json and .env file...
 SUDO_NUMBERS: process.env.SUDO_NUMBERS || "", //Add multiple Numbers with Country Codes without (+) Separated by Comma...
 ANTI_DELETE: process.env.ANTI_DELETE || "inboxonly", // can be set to inboxonly/allchats/true/false
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
